@@ -1865,11 +1865,13 @@ figcaption {
 }
 
 .form-success {
+  display: none;
   background-color: var(--mid-tone);
   border-radius: 12px;
 }
 
 .form-error {
+  display: none;
   border-radius: 12px;
   align-self: stretch;
   margin-top: 24px;
