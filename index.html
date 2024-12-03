@@ -34,11 +34,11 @@ body {
     <div class="bg-image home-hero">
       <div class="overlay"> <!--Transparent overlay to prevent others from right clicking or saving the video-->
         <!--Use below for static video-->
-        <!--<video autoplay muted loop playsinline class="background-video">-->
+        <video autoplay muted loop playsinline class="background-video">
           <!--<source src="/assets/hk_timelapse.mp4" type="video/mp4">-->
           <!--<source src="/assets/shanghai_new.mp4" type="video/mp4">-->
-          <!--<source src="/assets/clouds.mp4" type="video/mp4">-->
-        <!--</video>-->
+          <source src="/assets/clouds.mp4" type="video/mp4">
+        </video>
         <!--Use below for random video everytime page is refreshed-->
         <!--
         <video id="randomVideo" autoplay muted loop playsinline class="background-video">
@@ -67,8 +67,8 @@ body {
         </script>
         -->
         <!--Use below to choose video according to time of day-->
+        <!--
         <video autoplay muted loop playsinline class="background-video" id="videoPlayer">
-          <!-- Video source will be set by JavaScript -->
           <source id="videoSource" type="video/mp4">
         </video>
         <script>
@@ -90,6 +90,7 @@ body {
             document.getElementById('videoPlayer').load();
           };
         </script>
+        -->
       </div>
     </div>
     <div class="navbar-wrapper white">
