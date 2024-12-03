@@ -34,11 +34,11 @@ body {
     <div class="bg-image home-hero">
       <div class="overlay"> <!--Transparent overlay to prevent others from right clicking or saving the video-->
         <!--Use below for static video-->
-        <video autoplay muted loop playsinline class="background-video">
+        <!--<video autoplay muted loop playsinline class="background-video">-->
           <!--<source src="/assets/hk_timelapse.mp4" type="video/mp4">-->
-          <source src="/assets/shanghai_new.mp4" type="video/mp4">
+          <!--<source src="/assets/shanghai_new.mp4" type="video/mp4">-->
           <!--<source src="/assets/clouds.mp4" type="video/mp4">-->
-        </video>
+        <!--</video>-->
         <!--Use below for random video everytime page is refreshed-->
         <!--
         <video id="randomVideo" autoplay muted loop playsinline class="background-video">
@@ -67,30 +67,31 @@ body {
         </script>
         -->
         <!--Use below to choose video according to time of day-->
-        <!--
         <video autoplay muted loop playsinline class="background-video" id="videoPlayer">
           <source id="videoSource" type="video/mp4">
         </video>
         <script>
           window.onload = function() {
-            const videoSource = document.getElementById('videoSource');
-            const currentHour = new Date().getHours(); // Get the current hour (0-23)
+              const videoSource = document.getElementById('videoSource');
+              const currentHour = new Date().getHours(); // Get the current hour (0-23)
 
-            // Define daytime (e.g., 6 AM to 6 PM)
-            const isDaytime = currentHour >= 6 && currentHour < 16;
+              // Define daytime (e.g., 6 AM to 6 PM)
+              const isDaytime = currentHour >= 6 && currentHour < 16;
 
-            // Set the video source based on the time of day
-            if (isDaytime) {
-                videoSource.src = "/assets/clouds.mp4"; // Replace with your daytime video file
-            } else {
-                videoSource.src = "/assets/shanghai_new.mp4"; // Replace with your evening video file
-            }
+              // Set the video source based on the time of day
+              if (isDaytime) {
+                  videoSource.src = "/assets/clouds.mp4"; // Replace with your daytime video file
+              } else {
+                  videoSource.src = "/assets/shanghai_new.mp4"; // Replace with your evening video file
+              }
 
-            // Reload the video to apply the new source
-            document.getElementById('videoPlayer').load();
+              console.log('Current hour: ', currentHour);  // Check the time
+              console.log('Video source set to: ', isDaytime ? '/assets/clouds.mp4' : '/assets/shanghai_new.mp4');
+
+              // Reload the video to apply the new source
+              document.getElementById('videoPlayer').load();
           };
         </script>
-        -->
       </div>
     </div>
     <div class="navbar-wrapper white">
