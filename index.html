@@ -36,7 +36,7 @@ body {
         <!--Use below for static video-->
         <!--<video autoplay muted loop playsinline class="background-video">-->
           <!--<source src="/assets/hk_timelapse.mp4" type="video/mp4">-->
-          <!--<source src="/assets/shanghai_new.mp4" type="video/mp4">-->
+          <!--<source src="/assets/shanghai_night.mp4" type="video/mp4">-->
           <!--<source src="/assets/clouds.mp4" type="video/mp4">-->
         <!--</video>-->
         <!--Use below for random video everytime page is refreshed-->
@@ -51,7 +51,7 @@ body {
             '/assets/hk_timelapse.mp4',
             '/assets/ny_timelapse.mp4',
             '/assets/clouds.mp4',
-            '/assets/shanghai_new.mp4'
+            '/assets/shanghai_night.mp4'
           ];
       
           // Randomly select a video from the list
@@ -81,11 +81,11 @@ body {
           if (isDaytime) {
               videoSource.src = "/assets/clouds.mp4"; // Replace with your daytime video file
           } else {
-              videoSource.src = "/assets/shanghai_new.mp4"; // Replace with your evening video file
+              videoSource.src = "/assets/shanghai_night.mp4"; // Replace with your evening video file
           }
   
           console.log('Current hour: ', currentHour);  // Check the time
-          console.log('Video source set to: ', isDaytime ? '/assets/clouds.mp4' : '/assets/shanghai_new.mp4');
+          console.log('Video source set to: ', isDaytime ? '/assets/clouds.mp4' : '/assets/shanghai_night.mp4');
   
           // Reload the video to apply the new source
           document.getElementById('videoPlayer').load();
