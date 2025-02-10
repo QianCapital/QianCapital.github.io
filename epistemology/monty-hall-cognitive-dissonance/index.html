@@ -2,7 +2,7 @@
 <html data-wf-page="667b7d4411a74bca3238b421" data-wf-site="667b7d4411a74bca3238b3bc" lang="en">
 <head>
   <meta charset="utf-8">
-  <title>The Illusion of Expectation</title>
+  <title>Monty Hall Cognitive Dissonance</title>
   <meta content="Designed for organisations in the finance, consulting, science, and technology sectors, Stem Webflow Template brings an institutional feel, reminiscent of a modern university magazine or a scientific publication.  Stem’s no-nonsense air of authority allows both established businesses and fledgling startups to project a sense of credibility and expertise." name="description">
   <meta content="Stem - Webflow HTML Website Template" property="og:title">
   <meta content="Designed for organisations in the finance, consulting, science, and technology sectors, Stem Webflow Template brings an institutional feel, reminiscent of a modern university magazine or a scientific publication.  Stem’s no-nonsense air of authority allows both established businesses and fledgling startups to project a sense of credibility and expertise." property="og:description">
@@ -157,8 +157,8 @@ body {
             </nav>
           </div>
           <div class="navbar-right-contents">
-            <a href="../../login" class="nav-link inside-right-navbar w-nav-link">New Investors</a>
-            <a href="https://mmra.re/purchasestem" target="_blank" class="button inside-right-navbar w-inline-block">
+            <a href="../../new-investors/" class="nav-link inside-right-navbar w-nav-link">New Investors</a>
+            <a href="../../login" class="button inside-right-navbar w-inline-block">
               <div><span class="text-block-3">Investor Login</span></div>
             </a>
             <div class="menu-button w-nav-button">
@@ -182,14 +182,15 @@ body {
   <section class="section blog-title-section border-bottom">
     <div class="container---main">
       <div class="blog-title">
-        <h1>The Illusion of Expectation</h1>
-        <div class="heading-four serif">Expectation sometimes tends to overweight good
-          outcomes and large payoffs, and underweight the relatively smaller probabilities of those outcomes.</div>
+        <h1>Monty Hall Cognitive Dissonance</h1>
+        <div class="heading-four serif">The Monty Hall problem is a great example to portray the effects of painful truth revelation on human
+            cognition and behavior and the cognitive dissonance as a result. The revelation of the goat behind the
+            other 2 doors is irrelevant.
+        </div>
+        <a href="./Monty_Hall_Cognitive_Dissonance.pdf" download="Monty_Hall_Cognitive_Dissonance.pdf" class="pdf-button">
+          <img src="../../images/pdf.png" width="30">Monty_Hall_Cognitive_Dissonance.pdf
+        </a>
       </div>
-      <br>
-      <a href="./The_Illusion_of_Expectation.pdf" download="The_Illusion_of_Expectation.pdf" class="pdf-button">
-        <img src="../../images/pdf.png" width="30">The_Illusion_of_Expectation.pdf
-     </a>
     </div>
   </section>
   <section class="section no-border">
@@ -205,10 +206,10 @@ body {
             </div>
           </div>
           <div class="article-meta-right">
-            <a href="#" class="w-inline-block">
+            <a href="../../epistemology" class="w-inline-block">
               <div class="blog-tag bg-dark-tone">
                 <div class="bullet-circle"></div>
-                <div class="small-text text-block-3">Research</div>
+                <div class="small-text text-block-3">Epistemology</div>
               </div>
             </a>
             <div class="meta-date-read-time">
@@ -224,7 +225,7 @@ body {
               </div>
             </div>
           </div>
-        </div><img src="./expectations_vs_reality.jpg" alt="" class="article-image">
+        </div><img src="./montyhall.jpg" alt="" class="article-image">
       </div>
     </div>
   </section>
@@ -234,196 +235,222 @@ body {
       <div class="container---m align-center">
         <div class="article w-richtext">
           <h2>1. Introduction</h2>
-          <p>Decisions are typically made using expectation, or in mathematical terms, expected value, which is measured
-          in the context of both probability and outcome. As an example, people decide whether to buy something
-          based on whether their perceived, or expected, value of that thing is greater than the price of that thing. A
-          specific instance of this is traders and investors in the stock market who try to buy stocks at a discount of
-          their true value. Many traders have their own models of estimating expected returns of stocks. If a stock
-          is trading at a discount to what their model believes, then they should buy the stock. In other simpler scenarios, 
-          the computation of expected value is more straightforward and intuitive. For example, the expected
-          value of a fair standard dice roll (1 to 6) is 3.5 because the dice will roll above that half the time and below
-          it the other half. Therefore, if someone offered a game where they pay you the outcome of your single dice
-          roll, a rational person would agree to pay no more than $3.50 to play. Furthermore, the expectation can
-          be verified by running Monte Carlo simulations and looking at the distribution and mean of the outcomes,
-          comparing the result to your computed expectation.</p>
-          
-          <p>However, the computation of expected value can sometimes be very misleading. 
-            Although in many cases expectation offers a good estimate of outcomes, there also exist cases where expectation and outcome deviate, 
-            particularly when there are possible scenarios of extreme outcomes (good or bad), potentially biasing expectation. 
-            This deviation implies that it may not always be the best rational decision to completely trust and accept the expectation. 
-            The Illusion of Expectation exists because expectation sometimes tends to overweight extreme outcomes, and underweight the relatively 
-            smaller probabilities of those outcomes.</p>
-          <h2>2. Paradoxes of Expected Value</h2>
-          <h3>2.1 A Dream Lottery</h3>
-          <p>To demonstrate how expected value can be misleading, we first take a simple example of a lottery that has a 99.999% chance of losing and 0.0001% chance of winning the jackpot. 
-          Let's say that the jackpot prize was the world's GDP as of 2024, approximately $110,000,000,000,000.00, or 110 trillion dollars. 
-          How much is the expected payoff of this lottery, or in other words, how much would you be willing to pay for a lottery ticket? 
-          The expected value of such a lottery would be: \($0.99999\cdot0+0.000001\cdot\$11\cdot10^{13}=\$110,000,000$\)
-          However, almost no rational person would be willing to bet their life savings on such a lottery, despite the expectation suggesting otherwise. 
-          This is because the probability of the best outcome is far too small for us to risk so much capital, despite the significant payoff if the best outcome were to occur. 
-          If lottery tickets were offered for $1,000,000 a ticket, hardly anyone would consider purchasing. 
-          This scenario is an instance where the expectation, which is to win over $100 million, deviates from reality, which is most likely to win nothing from the lottery.</p>
-          <h3>2.2 St. Petersburg Paradox</h3>
-          <p>Illusions of expectation like these exist more commonly than most expect. In many cases, they are much more well-hidden and less obvious to notice. 
-          A famous example of this is known as the St. Petersburg paradox where, similarly, the intuitive thing to do deviates from the theoretical expectation.</p>
-
-          <p>First, consider a casino that offers a game where a player starts with $2 in the pot. The player continuously flips coins. 
-          For each heads they get, the player gets an additional $2. The game ends when the player flips a tail, and the player then keeps what is in the pot.
-          What is the most you would pay to play this game, or, in other words, how much do you expect to win from this game? 
-          Most people would not expect to win that much, as it is easy to flip a tails and end the game. 
-          Say, some people who are very confident in their coin-flipping abilities may believe they can flip 4 heads in a row before flipping a tails, resulting in a payout of: \(\$2\cdot4=\$8\) 
-          Other people who are not as confident may believe they can flip only 1 heads before they flip a tails, resulting in a payout of only $2. 
-          The theoretical expected payoff, \(P_1\), for this game is:
-          $$\text{E}[P_1] = \sum_{n=1}^{\infty}\frac{2n}{2^n} = 2\cdot(\frac{1}{2}+\frac{2}{4}+\frac{3}{8}+...) = 2\cdot2 = 4$$
-          Now, consider a casino that offers a game where a player starts with $2 in the pot. The player continuously flips coins. For each heads they get, the pot doubles in size. 
-          The game ends when the player flips a tail, and the player then keeps what is in the pot. 
-          Notice that the only difference between this game and the previous is the payout, where the previous game had a payoff of \(2n\) and this game has a payoff of \(2^n\) for \(n\) heads flips. 
-          The probabilities of flipping heads and tails have not changed. What's the most you would pay to play this game, or, in other words, how much do you expect to win from this game?
-          Most people would expect a similar payout as the previous game, and would not expect a significant difference, because it is likely for a tails to appear early on in the game. 
-          Say, some people who are very confident in their coin-flipping abilities may believe they can flip 4 heads in a row before flipping a tails, resulting in a payout of: \(\$2^4=\$16\). 
-          Other people who are not as confident may believe they can flip only 1 heads before they flip a tails, resulting in a payout of only \$2. 
-          Of course, this game is worth more than the first, because \(2^n>2n\) for \(n>2\). Nevertheless, the difference in expected payoff does not appear to be very significant or big. 
-          Astonishingly, however, is that the theoretical expected payoff, \(P_2\), for this game is:
-          $$\text{E}[P_2] = \sum_{n=1}^{\infty}\frac{2^n}{2^n} = \sum_{n=1}^{\infty}1 = 1+1+1+... => \infty$$
-          The expected payoff for this game is theoretically infinite. The expectation implies that paying \$1,000,000 to play this game would be worth it. 
-          However, most rational people would not pay even more than \$10 to play this game. 
-          And they would be correct: it would be foolish to pay that much for this game because it is very unlikely to reach the stage where the payouts would be significant. 
-          A simple Monte Carlo simulation of 100,000 trials of this game using a fair coin yields the following results:
-          </p>
-          <img src="./game2.png" alt="St. Petersburg Paradox" style="display: block; margin: 0 auto;">
-          <div style="text-align: center;">
-            <p>Figure 1: Density Histogram of Game 2 Payoffs Over 100,000 Simulations</p>
-          </div>
-          <p> The simulation yields a mean payoff of \$16.79, a min payoff of \$2 (no heads), and a max payoff of \$131,072 (17 consecutive heads). 
-          Observing Figure 1, it is clear that the distribution of payoffs is very skewed (skewing right towards higher outlier rewards). 
-          The more simulations you run, the more likely you will encounter these outlier scenarios where heads consecutively appears for many rounds until the first tails appears, 
-          resulting in extremely large payoffs. Nevertheless, most of the time, the game ends within a few rounds; a mean payoff of \$16.79 is nowhere close to the infinite expectation 
-          previously calculated.</p>
-          <p>The correct way to think about this problem, based on experience, is that it is very likely for the game to end early on than it is for the game to continue to the point where payoffs 
-          become significant, suggesting that although we should hope to flip more heads in a row, we should prepare for the more likely result, an early tails with limited payoff. 
-          Looking at the bigger picture, the payoffs of the second game have indeed increased exponentially relative to the first game, but the probabilities of reaching each stage have not changed. 
-          If the expected payoff of the first game is only \$4, suggesting that we will only flip one heads before flipping a tails, then what would suggest that the second game will be any different? 
-          Theoretically, if you could play this game an infinite amount of times, there would eventually be a point where your payoff approached \(\infty\). 
-          However, we must remember that practically, it is impossible to play this game that many times and it is not worth to invest the limited amount of capital we have into such an improbable event.</p>
-          <h3>2.3 Two Envelopes Paradox</h3>
-          <p>One more example of a scenario where the expectation is counterintuitive is known as the Two Envelopes Paradox. 
-          Say there are two envelopes: one contains \($X\), the other contains \($2X\), double the money of the first envelope. You can pick one envelope and open it to see how much money is inside. 
-          You get a chance to switch to the other envelope or keep your current envelope. 
-          Do you switch to the other envelope or not? Or does it not matter? For example, if you picked an envelope and it had $100 inside, 
-          you would know that the other envelope has either $200 or $50 inside it, meaning that by switching to the other envelope, you have the potential of 
-          either making another 100% or losing 50% of what you currently have. Intuitively, most people would initially think that the switch does not matter based on symmetry, 
-          as you had an equal chance of selecting the envelope with \($X\) or the envelope with \($2X\). However, the additional expected payoff of switching, \(S\), to the other envelope, \(E_2\), 
-          versus keeping your current envelope, \(E_1\), is: 
-          $$\text{E}[S] = \text{E}[E_2] - \text{E}[E_1] = (\frac{1}{2}\cdot\frac{X}{2}+\frac{1}{2}\cdot2X) - (X) = (\frac{X}{4}+X) - (X) = \frac{X}{4} > 0 \text{ for } X > 1$$
-          </p>
-          <p>
-            \(\text{E}[S]\) should be 0 (i.e. \(\text{E}[E_2] = \text{E}[E_1]\)) if there was no value in switching. However, the expectation suggests that by switching to the other envelope, 
-            you have an additional \(\frac{\$X}{4}\) in expected winnings, where $X$ is the value of the initial envelope opened. 
-            This implies that if you had picked an envelope with $100 inside, you would expect to receive an additional $25, or a total of $125 by switching to the other envelope, 
-            which has either $50 or $200 inside. This would imply that our first choice is always wrong and that we should always contradict and inverse our first choice to improve our 
-            odds of receiving a greater payoff.
-          </p>
-          <p>
-            However, this does not make sense because we have a 50% chance to select the envelope with \($X\), and a 50% chance to select the envelope with \($2X\). 
-            Switching would simply mean inversing our first choice, which is still the same as randomly picking one of the envelopes. 
-            Furthermore, this same switch argument can be made using the same logic regardless of which envelope we initially select. 
-            Intuitively, switching should not have any impact on our payoffs from this game. Although the expectation suggests otherwise, running a Monte Carlo simulation of 100,000 
-            trials for the above scenario confirms our intuition that the switch does not matter:
-          </p>
-          <img src="./two_envelopes.png" alt="Two Envelopes Paradox" style="display: block; margin: 0 auto;">
-          <div style="text-align: center;">
-            <p>Figure 2: Density Histograms of Keeping vs. Switching Envelopes Over 1000,000 Simulations</p>
-          </div>
-          <p>
-            The simulation yields an average payoff of $149.52 for the first strategy of always keeping your first envelope and an average payoff of $150.48 for the other strategy of 
-            always switching to the other envelope. As can be seen, always switching to the other envelope makes no material difference in the resulting payoff. 
-            This is because only 2 possible payoffs exist, and you have an equal probability of selecting either.
-          </p>
-          <p>
-            The correct way to think about this problem, based on experience, is that by performing the switch strategy, you are essentially flipping the two 
-            envelopes (i.e. you will end up with \(E_2\) if you picked \(E_1\) at first, and vice versa). Therefore, the actual probabilities of picking 
-            \(E_1\) or \(E_2\) have not changed (still 50-50), so the expected payoff of the switching strategy has not changed either. 
-            Going to the previous $100 envelope example, when you switch envelopes, you are potentially either doubling (100% gain, or $100 gain) or halving (only 50% loss, or only $50 loss) 
-            the money you currently have. Because there exists the potential to gain an extra $100, while only the potential to lose $50, expectation tends to overweight the best possible 
-            outcome and forgets that there is only a 50% chance of choosing the \($2X\) envelope or the \($X\) envelope, and that switching will not truly help improve odds for higher payoffs. 
-            Perhaps the deviation exists because of the consideration of 3 possible payoffs, $50, $100, and $200, where in fact, there only exists 2 of those 3 payoffs. 
-            So estimating the additional expected payoff based on 2 possible outcomes ($50 and $200) of the other envelope is incorrect because only 1 of those outcomes actually exists. 
-            This is another instance where expectation deviates from experience because of expectation overweighting larger payoffs. 
-          </p>
-          <h2>3. Theory vs. Practice</h2>
-          <h3>3.1 Duties of Traders and Researchers</h3>
-          <p>
-            The examples of the Illusion of Expectation explored previously are simple scenarios where the ideas and system dynamics are more intuitive to understand. 
-            However, illusions like these appear much more often than in the scenarios we explored. They often exist in more complex systems as well, but are more dangerous and well-hidden, 
-            causing us to easily fall prey to them. One of the most dangerous places for these illusions to exist is in the financial markets. When these illusions are not considered 
-            or spotted, they can quickly cause a firm to suffer large losses, such as overvaluing a stock.
-          </p>
-          <p>
-            Many mathematical models built by researchers can potentially suffer from the Illusion of Expectation and it is the job of the traders, who watch the markets all day, 
-            to identify these deviations between expectation and outcome. Most of the time, the models built by researchers backed by mathematical foundation will work 
-            properly and provide accurate estimates. However, for those particular instances where models predict (or fail to predict) price movements that are likely to happen, manual 
-            intervention must happen. This is why having a pragmatic perspective and understanding of the markets is so important. Unlike the previous simple lottery example, where 
-            most people would have a realistic understanding and estimation of the payoff likelihoods, markets are much more complex, where these disconnects between expectation 
-            and reality can occur more frequently and subtly. Traders build experience and intuition by actually observing market movements every day, so that when there appears to 
-            be a disconnect between expectation and reality, traders can quickly step in to take action.
-          </p>
-          <h3>3.2 Human Expectation and Experience</h3>
-          <p>
-            Humans similarly estimate expectations based on probabilities and corresponding outcomes. 
-            We often tend to overweight our expectations and thoughts on outcomes of the best-case scenarios and worst-case scenarios, 
-            particularly if the outcomes of those scenarios are too good or too horrible.
-          </p>
-          <p>
-            Have you ever set your expectations too high and ended up being disappointed? Or have you ever been terribly afraid or worried about something, 
-            ultimately to find that things were not as bad as they seemed? The human mind initially forms a model of expectation, driven by potential outcomes, 
-            similar to the models and formulas of expected value that were previously discussed. Humans then follow that model in their minds to take actions 
-            in their daily lives in the real world and experience results, similar to the Monte Carlo simulations that were previously shown. However, unlike 
-            the mathematical models of expectation previously discussed, humans can learn from experience. Interestingly, when humans experience letdowns and 
-            disappointments, experiencing the Illusion of Expectation, they gradually learn to adjust and lower their expectations to avoid being let down, 
-            almost as to impose a self-penalty for expectation on very high payoffs/great outcomes that have very low probabilities of occurring. 
-            Experience helps humans adjust their internal model of expectation to fit more in line with reality. This is an important distinction between 
-            the decision-making process of humans who have undergone real experiences and the decision-making process of algorithms that are rule-based 
-            and are not affected by experiences. Nevertheless, human minds have significant limitations in the amount of data that can be processed to 
-            accurately estimate the possible outcomes and probabilities. 
-          </p>
-          <h3>3.3 Mathematics, Logic, and AI</h3>
-          <p>
-            From all the previous examples, it is apparent that expectation is very frequently, but not always, perfect. Particularly for practical applications in the world, where 
-            both capital and time are limited, it is important to consider the illusions that expectations can portray. Most importantly, for practical applications, it is 
-            essential to be able to adapt to real-world circumstances and dynamics, and to address the limitations and constraints of those dynamics. To do so, learning from 
-            experience is incredibly important. Mathematical models and algorithms based on logic may not necessarily always be the most practical. Expected value models such 
-            as the St. Petersburg example will always have an infinite expected value despite only having very limited gains most of the time.
-          </p>
-          <p>
-            Alternatively, algorithms that learn from experience, offer the best of both worlds, being able to not only process large amounts of data but also learn from experience. 
-            Its ability is demonstrated by many of its outperformings of both humans and rule-based algorithms in various tasks. This topic is another area of exploration that 
-            goes beyond the scope of this paper.
-          </p>
+          <p><b>(Scenario 1)</b> You are on a game show with three doors in front of you, a car behind one of them are two goats behind the others. 
+            Your goal is to win the car. You select a door at random from the three. Before revealing what is behind the door you selected, the game show host, 
+            who knows where the car and goats are, opens another door from the two you did not select with a goat behind it. The host then offers you the option 
+            to switch doors to the other remaining unopened one or keep your initial selection. Do you switch doors? Does it even matter? Does switching doors 
+            give you a boost in your chances of selecting the car?</p>
+          <p>Otherwise known as the Monty Hall Problem, this famous hypothetical scenario has baffled and confused not
+            just regular people but also mathematicians, sparking fierce debates of logic and reasoning behind whether
+            switching doors will increase the chances of winning the car or not. In this article, we will explore the intuition behind the Monty Hall Problem, 
+            and explain why the host’s revelation of the other goat is irrelevant
+            to making the switch decision and does not impact the odds of winning the car.</p>
+          <h2>2. Monty Hall Intuition</h2>
+          <h3>2.1 Critics</h3>
+          <p>To understand why switching doors will increase the odds of winning, we must first understand where the
+            confusion comes from. Most critics of the Monty Hall Problem argue, in some way, shape, or form, that
+            because only 2 doors are remaining to choose from, with one being the car and the other being the goat,
+            switching or not does not matter and you have a \(\frac{1}{2}\) probability of winning either the goat or the car.</p>
+          <p>Imagine an alternate scenario of the game where you do not select an initial door. Instead, the game
+            show host directly reveals to you where one of the goats is, and then asks you to make your door selection. 
+            In this scenario, the critics would be correct, and there would indeed be a \(\frac{1}{2}\) probability of selecting the
+            door with the car, as you only have 2 doors to choose from, without any other options or strategies to employ.</p>
+          <p>What these critics neglect and fail to consider is the beginning of the game where you initially select a
+            door. Although it may not seem important, the initial selection is the key reason as to why switching doors
+            will increase winning odds.</p>
+          <h3>2.2 Strategy Perspective</h3>
+          <p>To understand why switching doors will increase the odds of winning, think about the Monty Hall scenario
+            from the perspective of strategy. In essence, you only have 2 possible strategies: switch or no switch.</p>
+          <p>If you initially select a goat and switch, you are guaranteed to get the car. This is because the game
+            show host will reveal the other goat, leaving the remaining door with the car unopened. If you do not
+            switch, you are guaranteed to get a goat. The probability of you initially selecting a goat is \(\frac{2}{3}\) as there are 2
+            goats with 3 doors to choose from. Alternatively, if you initially select the car and switch, you are guaranteed
+            to get a goat, as the other 2 doors will only have goats. If you do not switch, you are guaranteed to get the
+            car. The probability of you initially selecting the car is \(\frac{1}{3}\), half the probability of selecting a goat.</p>
+          <p>Essentially, by switching doors, you are converting your initial \(\frac{2}{3}\) probability of losing into a \(\frac{2}{3}\) probability of
+            winning. Since if you initially selected a goat (\(\frac{2}{3}\) probability) and subsequently switch, you are guaranteed
+            to win the car. By not switching, you are locking in your \(\frac{2}{3}\) probability of losing and getting a goat. By
+            choosing the switch strategy, you are actually hoping to choose a goat at the start, because switching will
+            guarantee you a car. By not switching, you are hoping to choose the car on the initial pick, which is half as
+            likely, with only \(\frac{1}{3}\) probability.</p>
+          <p>Therefore, since it is more likely to select a goat initially, the best strategy is to switch doors. Because
+            if you did indeed select a goat initially and switch doors, you are guaranteed to win the car. If you do not
+            switch, your only hope is that you selected the car door up front, which is half as likely as selecting a goat.</p>
+          <h2>3. Impacts on Human Biases and Psychology</h2>
+          <h3>3.1 The Goat Revelation</h3>
+          <p>An alternate perspective for understanding the Monty Hall Problem involves a slightly alternated scenario
+            but does not change the odds of the game. (Scenario 2) Imagine you are asked to select an initial door
+            from the 3 doors. Instead of revealing the other goat, which we know is guaranteed to be behind 1 of those
+            2 other doors you did not select, the game show host asks you: Do you want to stick with the single door
+            that you chose, or you can just take everything behind the 2 other doors you did not choose. What would
+            you do? In this scenario, most people would now prefer to go with the other 2 doors, not knowing what’s
+            behind any of them, despite the fact that there has to be a goat behind 1 of those 2 doors. This makes more
+            sense now because you have a \(\frac{1}{3}\) probability of getting the car by sticking with your initial choice, and a \(\frac{2}{3}\)
+            probability of getting the car by taking the other 2 doors you did not select. As we will discuss, this scenario
+            and the original Monty Hall scenario (Scenario 1), with the goat revelation, are the exact same.</p>
+          <p>To bring home this idea, consider an extreme version of the Monty Hall game. Instead of 3 doors, imagine
+            there were now 100 doors with only 1 car behind a door and goats behind the remaining 99 doors. You
+            are asked to select a door initially. The game show host then reveals all other goats behind 98 other doors,
+            leaving only your door and 1 other door unopened. You are then offered the chance to switch. Would you
+            take the switch now? Some people would still need a minute to think before making the decision, as, similar
+            to before, there are only 2 choices. In fact, the game show host need not have opened the other 98 doors and
+            could have just asked you if you wanted to keep the initial door you selected, or you could have everything
+            behind the other 99 doors you did not select. In this case, where the host asks you whether you want to pick
+            your initial door, or if you want to just take everything behind the 99 other doors you did not select, most
+            people would not even blink an eye and choose to take the other 99 doors, even though it is already known
+            that there are at least 98 goats in the other 99 doors. Revealing the 98 goats does not make any difference
+            to the odds of the game, because it is already a known fact that 98 other doors have goats behind them.</p>
+          <h3>3.2 Cognitive Dissonance</h3>
+          <p>So what’s the difference? Why does revealing a goat behind one of the other 2 doors incline people to feel
+            there is a smaller difference in chances of winning between switching and not switching, while not revealing
+            any doors makes people believe there is a greater probability to win with switching, whereas, in reality, these
+            2 scenarios are exactly the same because whether the game show host reveals the other goat or not, we
+            already know 1 of the other 2 doors has a goat.</p>
+          <p>The Monty Hall problem is a great example to portray the effects of painful truth revelation on human
+            cognition and behavior and the cognitive dissonance as a result. <b>The revelation of the goat behind the
+            other 2 doors is irrelevant.</b> The revelation does not have any impact on the odds of winning or losing. It
+            is already a given fact that 1 of the 2 other doors has a goat; revealing the goat does not make a difference.
+            Its only purpose is to distract and scare you from making the logically and mathematically correct decision.
+            The revelation of the goat influences people to believe that because they now only have 1 possible other
+            unselected door that can have the car, their switch does not matter.</p>
+          <p>People are looking to avoid the goats as much as possible. Revealing the goat in one of the other 2 doors
+            is a harsh revelation of reality that one of the 2 other doors has a goat, which biases a human’s perspective
+            and scares them into believing there is now a lower chance of the remaining door having a car. In this
+            scenario, people are shocked by the fact that one of the 2 other doors they did not select has a goat, and
+            falsely believe their chances of winning are smaller now by switching, now that one of the goats has been
+            revealed. The revelation misleads them to believe that they now have a smaller chance that the car is behind
+            1 of those 2 doors because there is now only 1 other door remaining that can possibly have the car, whereas
+            that was always the case, even if the goat was not revealed. The revelation of the goat influences humans to
+            overweight the probability of the worst-case scenario: that the other unopened door also contains a goat.</p>
+          <p>In reality, however, their odds have not changed at all. The revelation of the goat simply transfers the
+            probability of winning the car (\(\frac{1}{3}\)) for the revealed door to the remaining unopened door. Switching to
+            the other door would be the exact same as taking what is behind both the other 2 doors you did not initially select, 
+            which obviously is the better decision. The revelation of one of the goats is to scare and trick
+            you into believing there is only 1 other door remaining and that it only has a \(\frac{1}{2}\) probability of having the
+            car. The game show host’s revelation of that goat does nothing else aside from creating cognitive dissonance.</p>
+          <p>Alternatively, not revealing any of the 2 other doors blinds people from the reality that there is a goat
+            behind one of the 2 other doors. The game show host could essentially give you the options of (1) keeping
+            the 1 door that you selected, or (2) taking both the other 2 doors you did not select. Most people in Scenario
+            2, where the goat is not revealed, would not think much about the worst-case scenario that the 2 other unselected doors both have goats, 
+            but would remain unbiased: that one of the 2 unselected doors has the car, and
+            switching has doubled the chances of winning by taking the other 2 doors instead of the one initially selected.
+            While we already know that 1 of the 2 other doors must contain a goat, most people in this scenario will still
+            most likely go with taking the other 2 doors because they are not directly exposed to the actual revelation of
+            the other goat. In reality, whether the goat is revealed or not behind the 2 other doors, the odds of winning
+            and losing have not changed. The only thing that has changed or has been impacted is human cognition
+            and human behavior. It is important to remember that in this scenario, taking the other 2 doors you did
+            not select would be the exact same option as switching doors from your initial selection in the regular scenario.</p>
+          <p>Although most people can come to understand the logic described above, there is still a slight feeling of
+            uneasiness and less comfortability with switching doors in Scenario 1 than there is in Scenario 2. This hesitation and uneasiness is the 
+            cognitive dissonance that the host’s revelation of the goat creates. It creates fear
+            and worry in the player’s judgment that now, instead of 2 possible doors to win the car, they only have 1
+            possible door to win the car by switching. Most are not even cognizant of how the goat revelation influences
+            them. Whereas the odds of winning in Scenario 1 are identical to those in Scenario 2, except that no fear
+            or distractions are created in Scenario 2, so the player does not experience any cognitive dissonance in their
+            decision-making of switching doors.</p>
+          <h3>3.3 Lessons in Trading and Financial Markets</h3>
+          <p>Many of the lessons from Monty Hall can be applied to trading and financial markets. Cognitive dissonance
+            is a large aspect of emotional trading and is one of the greatest drivers of capital loss. The period from
+            2023 to 2024 is a great example for demonstrating the effects of harsh truth revelation. For two consecutive years, 
+            there was a boom in technology, consumer spending, employment, and economic activity and
+            expansion, although coupled with signs of increased <b>inflation</b>, such as rising energy prices, consumer debt,
+            and negative consumer sentiment. When inflationary macro data such as NFP/ADP, CPI/PPI, etc were
+            released, many were overcome with fear of Fed rate hikes and sold off their long positions and became bearish, 
+            overlooking the strengths of the economy. The revelation of the macro data led many to focus heavily
+            on the down-sides of the economy and the worst-case scenario, and become bearish in the markets and
+            subsequently lose their capital through buying Put options or taking short positions. Whereas in reality,
+            despite the inflationary signs, the economy as a whole was still very strong and business and technology were
+            growing at a solid pace. The strength of the economy clearly outweighed the risks of rising inflation, but
+            the revelations of macro data, just like the revelation of the goat, scared and tricked many traders to becoming bearish and overlooking the strengths, 
+            just like how many people are tricked into not switching doors.</p>
+          <p>Ultimately, the lesson is to not let painful truth revelations make you underestimate the positives and
+            up-sides. To be successful in the markets, it is essential to always be unbiased, have a holistic view, and
+            be aware of both the negatives and the positives, carefully weighing them to make decisions. Revelations of
+            facts you already know and have accounted for should not influence your decision making.</p>
           <h2>4. Conclusion</h2>
-          <p>
-            Ultimately, it is important to remember that although things can be very good if things go right, things often do not always go right, and 
-            are likely to deviate from the expectation. It is also important to not worry about the worst-case scenarios so much, as it is just as unlikely 
-            for things to always go wrong. The mind, driven by logic and perfection, is analogous to the theoretical setting, while life and experiences 
-            occur in the real-world setting. Therefore, summarizing the previous points, one should have higher expectations while dreaming and have more 
-            sensible and lower expectations when actively experiencing life in the real world, preparing for anything that could go wrong. Similarly, those 
-            dreadful and awful things you are always so self-conscious and worried about will likely not manifest, and you'll be alright. The goal is to 
-            flatten your expectations and lean towards neutrality as much as possible.
+          <p>The crux of the Monty Hall problem is that you are more likely to select a goat on your first choice and that
+            you are given the option to turn your \(\frac{2}{3}\) losing probability into a \(\frac{2}{3}\) winning probability by switching because
+            if you initially select a goat and switch, you are guaranteed to win the car.</p>
+          <p>The probability of winning the car is equivalent in both scenarios, whether the host reveals the other goat
+            or not. It is already a given that 1 of the other 2 doors you did not select contains a goat. The revelation
+            of the other goat just confirms this fact; it does not impact the odds of the game in any way. If the other
+            goat was not revealed, it would be immediately obvious to most that switching (taking the other 2 doors
+            you did not initially select) is the correct decision because picking the other 2 doors doubles your chances of
+            winning the car, even though it is still true that one of those doors has a goat. Therefore, one should make
+            the same decision of switching doors in the original Scenario 1, where the other goat is revealed, as they
+            would in Scenario 2, where the other goat is not revealed.</p>
+          <p>The direct revelation of unfavorable and painful truths creates cognitive dissonance and distracts from
+            the optimal thing to do, as evidenced by the reactions to the Monty Hall problem. The revelation of painful
+            truths biases people by making them overestimate the probability of the worst-case scenario.</p>
+          <p>While the Monty Hall problem may seem just like another probability puzzle, the implications of the problem
+            are much more significant. The most important lesson from the Monty Hall problem is not to let insignificant
+            things in life affect you, or at least be aware of the insignificant events that constantly occur. There may be
+            adversities that scare or shock you, just like the goat revelation, but do not actually change the circumstances
+            of things. You must be constantly wary of these distractions and not let them create cognitive dissonance
+            or deter you from making the most optimal and logical decisions, despite the emotions you may feel.</p>
+          <h2>5. Monty Hall Extended</h2>
+          <h3>5.1 Four Doors</h3>
+          <p>To test your understanding and intuition of the Monty Hall scenario, consider an extended version of the
+            original problem: Imagine there are 4 doors, with 3 goats and 1 car behind them. You initially select a door.
+            The game show host then reveals a goat behind 1 of the 3 other doors you did not select. You are then
+            offered the opportunity to either keep your initial door or switch to 1 of the 2 other unopened doors. Do
+            you make the switch from your initial door? What are the probabilities of winning in both cases?</p>
+          <p><b>Solution:</b> We know that there is a \(\frac{1}{4}\) probability of selecting the car on the first choice. Therefore, the
+            probability that the car is in 1 of the other 3 doors you did not select is \(\frac{3}{4}\). Because the host reveals a goat
+            in 1 of the 3 other doors, there are now only 2 other doors remaining that can possibly have the car if you
+            switch. But remember, if you switch, you only get to choose 1 of the 2 doors. The \(\frac{3}{4}\) probability that the car
+            is in 1 of the 3 other doors you did not select does not change, even if the host reveals a goat because it is a
+            fact that there are at least 2 goats in the 3 doors you did not select. Therefore, each of the 2 unopened doors
+            you did not select has a \(\frac{3}{4}*\frac{1}{2}=\frac{3}{8}\) probability of having the car, which is greater than the \(\frac{2}{8}\) probability of
+            the door you initially chose.</p>
+          <p>Therefore, you should make the switch and randomly pick 1 of the 2 unopened doors. This will increase
+            your chances of winning the car by \(\frac{1}{8}= 12.5\%\).</p>
+          <h3>5.2 Infinite Doors</h3>
+          <p>The previous four-door scenario can be generalized and extended to n total doors with 1 car and \(n−1\) goats,
+            where you select an initial door, a goat is revealed from the other \(n−1\) doors, and you are allowed to switch
+            to one of the other \(n−2\) unopened doors you did not select.</p>
+          <p>There is a \(f_{\text{stay}}(n) = \frac{1}{n}\) probability of choosing the car on the first door, and a \(f_{\text{switch}}(n) = \frac{n−1}{n}\) 
+            probability of the car being in the other doors you did not select. One of the goats is eliminated from the
+            unselected n−1 doors, bringing the probability of each of the remaining n−2 unselected doors containing
+            the car to: $$f_{\text{switch}}(n)=\frac{n-1}{n}*\frac{1}{n-2}=\frac{n-1}{n^2-2n}$$</p>
+          <p>It can be shown that \(f_{\text{switch}}(n)>f_{\text{stay}}(n)\) for all \(\forall n \in \mathbb{R}, \, n > 2\). Let \(h(n)=f_{\text{switch}}(n)-f_{\text{stay}}(n)\):
+            $$h(n) = \frac{n-1}{n^2-2n}-\frac{1}{n} = \frac{n(n-1)-(n^2-2n)}{n(n^2-2n)} = \frac{n^2-n-n^2+2n}{n(n^2-2n)} = \frac{n}{n(n^2-2n)}=\frac{1}{n(n-2)}$$
+            $$h(n) > 0, \{\forall n \in \mathbb{R}, \, n > 2\}$$
+            $$f_{\text{switch}}(n)>f_{\text{stay}}(n), \{\forall n \in \mathbb{R}, \, n > 2\}$$
           </p>
-          <h2>Appendix</h2>
-          <h3>A.1 The Casino's Perspective</h3>
-          <p>
-            As previously discussed in the St. Petersburg paradox, we can examine the exact counterpart of this game to illustrate the other side of the Illusion of Expectation. 
-            Taking the exact coin-flipping game as before, suppose you were the casino itself instead of the coin-flipper player. 
-            As you are filling the pot, the casino's payoff, \(C\), would be:
-            $$\text{E}[C] = \sum_{n=1}^{\infty}\frac{-2^n}{2^n} = \sum_{n=1}^{\infty}-1 = -1-1-1-... => -\infty$$
+          <p>For \(n > 2\), \(h(n)\) is always positive. Therefore, for any finite number of doors > 2, there is always some
+            finite increase in the probability of winning by switching to another door you did not initially select, so you
+            should always switch doors no matter how many doors there are. Intuitively, this makes sense, because as
+            the number of doors, n, gets larger, your probability of selecting the door with the car on your first pick
+            decreases. Therefore, as the number of doors gets large, you might as well switch to another door you did not
+            select, as there is a very high probability the single door you initially chose does not have the car. However,
+            simultaneously, the probability of your switch containing the car also rapidly diminishes. The difference in
+            winning probability of switching is larger and more significant for 2 or 3 doors but becomes very minuscule
+            for larger numbers of doors. This can be shown by showing that \(h(n)\) is strictly decreasing for \(n > 2\):
+            $$h'(n) = -\frac{2(n-1)}{n^2(x-2)^2}$$
+            $$\because 2(n-1) > 0, \{\forall n \in \mathbb{R}, \, n > 2\}$$
+            $$\because n^2(x-2)^2 > 0, \{\forall n \in \mathbb{R}, \, n > 2\}$$
+            $$\therefore h'(n) < 0, \{\forall n \in \mathbb{R}, \, n > 2\}$$</p>
+          <p>Therefore, the marginal increase in the probability of winning decreases as the number of doors gets large.
+            One can compute the second derivative, \(h”(n)\), to know how quickly the probability decreases.</p>
+          <p>So is there a number of doors where the switch does not matter? It can be shown that:
+            $$\lim_{n \to \infty} h(n) = \lim_{n \to \infty} \frac{1}{n(n-2)} = 0$$
           </p>
-          <p>Yikes! Your expected loss for providing this game in your casino is unlimited. As the casino's owner, seeing this math would make you lose sleep 
-            every day, constantly imagining and expecting the worst possible outcome of losing everything and going bankrupt. To be safe, the expectation 
-            suggests never offering this game, not even if somebody were to pay you $1,000,000 to play. But thinking about it, you are missing out on $1,000,000, 
-            where the probability of actually losing that much is very low. By the time that someone actually wins $1,000,000 from you, you would already 
-            have made more than enough to cover those losses. Any rational casino would be unlikely to pass up this opportunity.</p>
-          <p>Therefore, the moral of the story is that the Illusion of Expectations works both ways, often making you ecstatic for the best possible scenario 
-            outcomes while worrying you about the worst ones.</p>
+          <p>Therefore, if there are an infinite number of doors to choose from, staying with your initial door or switching
+            to another door makes no difference on the probability of winning the car.</p>
+
+          <h2>Deal or No Deal</h2>
+          <p>The famous game show "Deal or No Deal" features a game where a contestant selects a briefcase from a set of 26, each containing a different amount of money. 
+            The contestant then proceeds to open the remaining briefcases one by one, revealing the amounts of money inside. 
+            After each round, the banker offers the contestant a deal to buy the briefcase the contestant initially selected. 
+            The contestant must decide whether to accept the deal or continue opening briefcases. 
+            The game show is a great example of a real-life Monty Hall situation, as the contestant must decide whether to switch briefcases or keep the initial one.</p>
+          <p>Although not as simple as the original Monty Hall scenarios previously discussed, if one finds themselves lucky enough to make it towards the end of the game with the grand prize
+            still in play, it is always beneficial to switch briefcases, as the odds of winning the grand prize are higher when switching.</p>
+          <p>One previous contestant was lucky enough to make it all the way to the end of the game, where only 2 briefcases, one with $1 and the other with $1,000,000, remained. 
+            Unfortunately, one contestant did not know about this fact and ended up stayting with their original briefcase, justified by their distaste for the number "11", the number of the unselected briefcase still in play: </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/mrQ53s9B-oE?si=dG3jinKlm30wmn0z&amp;start=2280" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display: block;margin: auto;"></iframe>
+          <p>It is always crucial to remember the math and listen to it over any other feelings of emotion or instinct. Poor Richie could have increased his chances of winning $1,000,000 from 1/13 to 12/13, about a 84.6% boost in probability, just by switching briefcases! </p>
         </div>
       </div>
     </div>
