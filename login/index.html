@@ -29,9 +29,33 @@ body {
   
   <div class="w-users-userformpagewrap account-page-wrapper">
     <div class="overlay">
-      <video autoplay muted loop playsinline class="background-video">
-        <source src="../assets/shanghai_timelapse.mp4" type="video/mp4">
+      <!--Use below to choose video according to time of day-->
+      <video autoplay muted loop playsinline class="background-video" id="videoPlayer">
+        <source id="videoSource" type="video/mp4"> <!--Time of day-->
+        <!--<source src="/assets/clouds.mp4" type="video/mp4">-->
+        <!--<source src="/assets/shanghai_night2.mp4" type="video/mp4">-->
       </video>
+      <script>
+        const videoSource = document.getElementById('videoSource');
+        const currentHour = new Date().getHours(); // Get the current hour (0-23)
+
+        // Define daytime (e.g., 6 AM to 6 PM)
+        const isDaytime = currentHour >= 6 && currentHour < 16;
+
+        // Set the video source based on the time of day
+        if (isDaytime) {
+            // videoSource.src = "/assets/clouds.mp4"; // Replace with your daytime video file
+            videoSource.src = "/assets/shanghai_day.mp4";
+        } else {
+            videoSource.src = "/assets/shanghai_night2.mp4"; // Replace with your evening video file
+        }
+
+        console.log('Current hour: ', currentHour);  // Check the time
+        console.log('Video source set to: ', isDaytime ? '/assets/clouds.mp4' : '/assets/shanghai_night.mp4');
+
+        // Reload the video to apply the new source
+        document.getElementById('videoPlayer').load();
+      </script>
     </div>
     <div class="login-logo-header">
       <a href="../" class="w-inline-block"><img src="../images/White logo - no background.png" alt="Logo" class="login-logo"></a>
@@ -55,7 +79,7 @@ body {
     </div>
     <div class="account-footer">
       <a href="../" class="w-inline-block"><img src="../images/gold_logo.png" loading="lazy" width="200" sizes="(max-width: 479px) 80vw, 200px" alt=""></a>
-      <div class="fine-print half-muted text-center text-span-9"><b>© 2024 Qian Capital, L.P.</b></div>
+      <div class="fine-print half-muted text-center text-span-9"><b>© Qian Capital, L.P.</b></div>
     </div>
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=667b7d4411a74bca3238b3bc" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
