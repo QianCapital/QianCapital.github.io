@@ -1942,6 +1942,7 @@ figcaption {
 .navbar-wrapper {
   border-bottom: 1px solid var(--green);
   position: relative;
+  background-color: var(--light-tone);
 }
 
 .navbar-wrapper.white {
@@ -8384,4 +8385,37 @@ figcaption {
   left: 10px; /* Distance from the left */
   width: 250px; /* Adjust the size as needed */
   height: auto; /* Maintains aspect ratio */
+}
+
+
+/* Make Navbar Fixed at top */
+.navbar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
+body {
+  padding-top: 105px;
+}
+
+.hero-cover-section-dynamic {
+  position: relative;
+  overflow: visible;
+  background-color: var(--dark-tone-faded);
+  opacity: 1;
+  outline-offset: 0px;
+  color: var(--light-tone);
+  -webkit-text-fill-color: inherit;
+  background-clip: border-box;
+  outline: 3px #f8f6f2;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 91.78vh;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 110px;
+  display: flex;
 }
