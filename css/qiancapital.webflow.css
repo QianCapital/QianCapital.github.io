@@ -8397,7 +8397,11 @@ figcaption {
   width: 100%;
 }
 
-body {
+.body.home {
+  padding-top: 105px;
+}
+
+.body.qian {
   padding-top: 105px;
 }
 
@@ -8413,9 +8417,20 @@ body {
   outline: 3px #f8f6f2;
   flex-flow: column;
   justify-content: space-between;
-  height: 91.78vh;
+  height: 92vh;
   width: 100%;
   margin: 0;
   padding-bottom: 110px;
   display: flex;
 }
+
+.hero-4-lower {
+  border-top: 1px solid var(--gold);
+  position: relative;
+  overflow: visible;
+  flex-flow: column;
+  height: 25vh;
+}
+
+
+/* Make Navbar Fixed at top */
