@@ -6346,6 +6346,7 @@ figcaption {
   }
 
   .hero-4-lower {
+    /*margin-top: -37px;*/
     padding-top: 36px;
   }
 
@@ -8398,11 +8399,11 @@ figcaption {
 }
 
 .body.home {
-  padding-top: 105px;
+  padding-top: 95px;
 }
 
 .body.qian {
-  padding-top: 105px;
+  padding-top: 60px;
 }
 
 .hero-cover-section-dynamic {
@@ -8417,19 +8418,74 @@ figcaption {
   outline: 3px #f8f6f2;
   flex-flow: column;
   justify-content: space-between;
-  height: 92vh;
+  height: 92.6vh;
   width: 100%;
   margin: 0;
   padding-bottom: 110px;
   display: flex;
 }
 
+.hero-4-upper.qian {
+  position: relative;
+  align-items: flex-start;  /* Align children (video and text) at the top */
+  overflow: hidden;
+  padding-bottom: 850px;
+  background-color: var(--dark-tone-faded);
+  flex-flow: column;
+  justify-content: flex-start; /* Align content at the top */
+  width: 100%;
+  margin: 0;
+  display: flex;
+  height: 70vh;  /* Adjust as needed */
+}
+
 .hero-4-lower {
   border-top: 1px solid var(--gold);
   position: relative;
-  overflow: visible;
   flex-flow: column;
-  height: 25vh;
+  height: auto;
+}
+
+.small-background-video-qian {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bg-image.qian {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+  overflow: hidden; /* Ensure video does not overflow */
+}
+
+.overlay.qian {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Transparent background */
+  pointer-events: none; /* Allow click events to pass through */
+}
+
+.navbar-placeholder {
+  height: 30px;
+  display: block;
+}
+
+body::after {
+  content: "Happy New Year!";
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: red;
+  color: white;
+  padding: 5px;
+  z-index: 9999;
 }
 
 
