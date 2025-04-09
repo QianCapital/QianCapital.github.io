@@ -1276,7 +1276,7 @@ figcaption {
   /*padding-top: 48px;*/
   padding-top: 0;
   padding-bottom: 0;
-  display: flex;
+  /*display: flex;*/ /*Creates really ugly gap on QIAN page when narrowing window and making it thinner*/
 }
 
 .section.process-step {
@@ -8477,6 +8477,7 @@ figcaption {
   display: block;
 }
 
+/* Add a message at the bottom of the page */
 body::after {
   content: "Happy New Year!";
   position: fixed;
