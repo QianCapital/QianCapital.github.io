@@ -2071,6 +2071,10 @@ figcaption {
   display: none;
 }
 
+.mobile-logo-section {
+  display: none;
+}
+
 .style-guide-description {
   grid-column-gap: 12px;
   grid-row-gap: 12px;
@@ -4536,7 +4540,7 @@ figcaption {
   width: 100%;
   max-width: none;
   height: 100vh;
-  padding: 24px;
+  padding: 25px;
 }
 
 .account-wrapper {
@@ -4550,6 +4554,7 @@ figcaption {
   width: 100%;
   max-width: 456px;
   display: flex;
+  padding-bottom:25px;
 }
 
 .account-form-underlined-link {
@@ -5281,6 +5286,21 @@ figcaption {
     font-size: 25px;
   }
 
+  /* Mobile logo section */
+  .mobile-logo-section {
+    border-bottom: 1px solid var(--gold);
+    margin-bottom: 30px;
+    margin-left: -100px;
+    margin-right: -100px;
+    display: block;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0; /* Stick it to the top of the viewport */
+    z-index: 9999;
+    background-color: var(--dark-tone);
+    padding-top: 0;
+  }
+
   .mobile-logo {
     align-self: flex-start;
     margin-bottom: 48px;
@@ -5289,7 +5309,8 @@ figcaption {
 
   .mobile-logo.w--current {
     align-self: flex-start;
-    margin-bottom: 36px;
+    /*margin-bottom: 36px;*/
+    margin-bottom: 10px;
   }
 
   .nav-menu-close {
@@ -8335,6 +8356,24 @@ figcaption {
   max-height: 100%; /* Limit maximum height */
 }
 
+.background-video-login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 100%; /* Limit maximum width */
+  max-height: 100%; /* Limit maximum height */
+}
+
+@media (max-width: 768px) {
+  .background-video-login {
+    width: 100vw; /* Use the full viewport width */
+    height: 200vh; /* Use the full viewport height */
+  }
+}
+
 .hero-4-upper {
   position: relative;
   width: 100%;
@@ -8377,7 +8416,7 @@ figcaption {
 
 .login-logo-header {
   position: relative;
-  padding: 10px; /* Adjust as needed */
+  padding: 50px; /* Adjust as needed */
 }
 
 .login-logo {
@@ -8399,11 +8438,11 @@ figcaption {
 }
 
 .body.home {
-  padding-top: 95px;
+  padding-top: 60px;
 }
 
 .body.qian {
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 .hero-cover-section-dynamic {
@@ -8418,11 +8457,15 @@ figcaption {
   outline: 3px #f8f6f2;
   flex-flow: column;
   justify-content: space-between;
-  height: 92.6vh;
+  height: 95.5vh;
   width: 100%;
   margin: 0;
   padding-bottom: 110px;
   display: flex;
+}
+
+.container---main.home {
+  padding-top: 40px;
 }
 
 .hero-4-upper.qian {

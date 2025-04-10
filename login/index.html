@@ -26,11 +26,10 @@ body {
 </style>
 </head>
 <body>
-  
   <div class="w-users-userformpagewrap account-page-wrapper">
     <div class="overlay">
       <!--Use below to choose video according to time of day-->
-      <video autoplay muted loop playsinline class="background-video" id="videoPlayer">
+      <video autoplay muted loop playsinline class="background-video-login" id="videoPlayer">
         <source id="videoSource" type="video/mp4"> <!--Time of day-->
         <!--<source src="/assets/clouds.mp4" type="video/mp4">-->
         <!--<source src="/assets/shanghai_night2.mp4" type="video/mp4">-->
@@ -72,7 +71,7 @@ body {
         <div style="display:none" data-wf-user-form-error="true" class="w-users-userformerrorstate form-error w-form-fail">
           <div class="user-form-error-msg" wf-login-form-general-error-error="We&#x27;re having trouble logging you in. Please try again, or contact us if you continue to have problems." wf-login-form-invalid-email_or_password-error="Invalid email or password. Please try again.">We&#x27;re having trouble logging you in. Please try again, or contact us if you continue to have problems.</div>
         </div>
-        <div class="w-users-userformfooter form-footer"><span class="small-text">Forgot Password? </span>
+        <div class="w-users-userformfooter form-footer">
           <a href="../reset-password" class="small-text w-inline-block"><b>Reset Password</b></a>
         </div>
       </div>
