@@ -5301,9 +5301,13 @@ figcaption {
     padding-top: 0;
   }
 
+  .mobile-logo-section.white {
+    background-color: var(--light-tone);
+  }
+
   .mobile-logo {
     align-self: flex-start;
-    margin-bottom: 48px;
+    margin-bottom: 10px;
     display: block;
   }
 
@@ -8438,7 +8442,7 @@ figcaption {
 }
 
 .body.home {
-  padding-top: 60px;
+  padding-top: 50px;
 }
 
 .body.qian {
@@ -8457,7 +8461,7 @@ figcaption {
   outline: 3px #f8f6f2;
   flex-flow: column;
   justify-content: space-between;
-  height: 95.5vh;
+  height: 96.2vh;
   width: 100%;
   margin: 0;
   padding-bottom: 110px;
