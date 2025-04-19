@@ -8524,7 +8524,8 @@ figcaption {
   display: block;
 }
 
-/* Add a message at the bottom of the page */
+/* Add a Red message at the bottom of the page */
+/*
 body::after {
   content: "Happy New Year!";
   position: fixed;
@@ -8535,6 +8536,6 @@ body::after {
   padding: 5px;
   z-index: 9999;
 }
-
+*/
 
 /* Make Navbar Fixed at top */
