@@ -5004,6 +5004,10 @@ figcaption {
   color: var(--dark-tone);
 }
 
+.text-span-12 {
+  color: var(--mid-tone);
+}
+
 .paragraph {
   margin-top: -114px;
   margin-bottom: -98px;
